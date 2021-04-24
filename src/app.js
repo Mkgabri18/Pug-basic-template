@@ -1,5 +1,5 @@
 console.log("Hello World")
-let template = require("./templates/components/users.pug");
+/*let template = require("./templates/components/users.pug");
 
 let locals = {
     users: [
@@ -12,3 +12,4 @@ let locals = {
 };
 
 document.querySelector("main").innetHTML = template(locals);
+*/

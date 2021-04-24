@@ -1,12 +1,8 @@
-doctype html
-html(laang="en")
-    head 
-        meta(charset="UTF-8")
-        meta(name="viewport" content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+//- index.pug page
+extends ../includes/_layout.pug
+block head
+	+head('404 - Not Found!')
+block content
+	include ../components/_main.pug
 
-        title My app 
 
-    body    
-        main 
-            h1 Pug rules
