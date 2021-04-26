@@ -1,3 +1,5 @@
+import style from './styles/style.scss';
+
 console.log("Hello World")
 /*let template = require("./templates/components/users.pug");
 
