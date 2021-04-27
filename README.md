@@ -24,7 +24,7 @@ Crear el ** webpack.config.js ** para configurar webpack, agregar los siguentes 
 "script": {
 	"build": "webpack --mode=production",
 	"build:dev": "webpack --mode=development",
-	"start:dev": "webpack-dev-server --mode=development"
+	"dev": "webpack-dev-server --mode=development"
 },
 ```
 
@@ -32,7 +32,7 @@ Ahora se puede arrancar el proyecto con
 ```bash
 npm run build => compilacion
 npm run build:dev => compilacion en desarrollo
-npm run start:dev => desarrollo y watch
+npm run dev => desarrollo y watch
 ```
 
 ## Dependencias de desarrollo
@@ -41,6 +41,10 @@ npm run start:dev => desarrollo y watch
 
 ```bash
 npm i -D pug pug-loader html-webpack-plugin
+```
+
+```bash
+npm i -D css-loader style-loader node-sass sass-loader
 ```
 
 - Plugins utile para el desarrollo con bootstrap y jquery
