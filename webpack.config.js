@@ -9,6 +9,7 @@ const config = {
     },
     devServer: {
         port: 3000,
+        open: true
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -22,6 +23,14 @@ const config = {
             test: /\.pug$/,
             use: ["pug-loader"]
           },
+          {
+            test: /\.scss$/,
+            use: [
+              {loader: 'style-loader'},
+              {loader: 'css-loader'},
+              {loader: 'sass-loader'}
+            ]
+          }
         ]
     }
 }
