@@ -7,7 +7,7 @@
 html, body {
   margin: 0;
   width: 100vw;
-  font-size: var(--body-font-size);
+  font-size: $body-font-size;
 }
 
 h1, h2, h3, h4, h5, h6 {
