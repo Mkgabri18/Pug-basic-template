@@ -1,6 +1,6 @@
 import style from './styles/style.scss';
 
-console.log("Hello World")
+console.log("Hello World, time to init")
 /*let template = require("./templates/components/users.pug");
 
 let locals = {
@@ -12,6 +12,6 @@ let locals = {
         "user5"
     ]
 };
-
+<F3>
 document.querySelector("main").innetHTML = template(locals);
 */
