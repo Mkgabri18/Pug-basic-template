@@ -1,3 +1,11 @@
 //- header.pug  header component
-header
-	p soy el header
+
+//- variables
+- var navItems = ['Home', 'Projects', 'About']
+
+header.header
+    h1 Main Brand
+    nav.nav
+        ul.menu
+            each item in navItems
+                li: a(href='#')= item
