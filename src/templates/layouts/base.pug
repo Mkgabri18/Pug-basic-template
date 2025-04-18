@@ -1,0 +1,34 @@
+//- Base layout template
+include ../mixins/meta
+include ../mixins/icons
+
+doctype html
+html(lang='en')
+  head
+    +meta({
+      title: title || 'Modern Pug Template',
+      description: description || 'A modern and flexible Pug template'
+    })
+    +favicon
+    
+    //- Styles
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin)
+    link(href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap' rel='stylesheet')
+    
+  body.min-h-screen.flex.flex-col
+    //- Header
+    block header
+        include ../includes/header
+    
+    //- Main content
+    main.flex-grow
+        block content
+        //- Page content will be injected here
+    
+    //- Footer
+    block footer
+        include ../includes/footer
+    
+    //- Scripts
+    block scripts 

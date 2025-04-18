@@ -1,0 +1,17 @@
+//- variables
+- var navItems = ['Projects', 'About', 'Contact']
+
+header.header
+    nav.nav-container
+        .logo
+            a(href='/') Modern Pug
+    
+        //- Main navigation
+        ul.nav-links
+            each item in navItems
+                li: a(href=`/${item.toLowerCase().replace(/\s+/g, '-')}`) #{item}
+            
+        //- Mobile menu button
+        button(aria-label='Menu')
+            svg.w-6.h-6(xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor')
+                path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16') 
