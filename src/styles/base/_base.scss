@@ -1,3 +1,5 @@
+@use "/src/styles/config/variables" as *;
+
 // Aplico las reglas bases para los elementos html, como un reset
 
 *,*::before,::after {
@@ -6,8 +8,15 @@
 
 html, body {
   margin: 0;
-  width: 100vw;
-  font-size: var(--body-font-size);
+}
+
+// Base styles
+body {
+  font-family: $font-family-base;
+  font-size: $font-body-base;
+  color: $text-color;
+  line-height: $line-height-base;
+  background-color: $background-color;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -31,4 +40,25 @@ a {
   &:focus, &:active, &:visited {
     color: inherit;
   }
+}
+
+
+/* bodylayout */
+body {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 80px 1fr 100px;
+}
+
+header {
+  grid-column: 1/ span 12;
+}
+
+main {
+  grid-column: 1/ span 12;
+}
+
+footer {
+  grid-column: 1/ span 12;
 }
