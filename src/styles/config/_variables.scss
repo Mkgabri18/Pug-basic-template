@@ -26,40 +26,41 @@ $breakpoints: (
 }
 
 
-// variables de capas ( z-index )
-:root {
-  --z-back: -10;
-  --z-normal: 1;
-  --z-tooltip: 10;
-  --z-fixed: 100;
-  --z-modal: 1000;
-}
+// Colors
+$primary-color: #3b82f6;
+$secondary-color: #64748b;
+$success-color: #22c55e;
+$warning-color: #f59e0b;
+$error-color: #ef4444;
+$text-color: #2c3e50;
+$background-color: #f8f9fa;
 
+// Typography
+$font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+$font-body-base: 0.9rem;
+$line-height-base: 1.5;
 
-// varibles de typografia
-:root {
-  --h1-font-size: 2rem;
-  --h2-font-size: 1.5rem;
-  --h3-font-size: 1.25rem;
-  --body-font-size: .9rem;
-  --small-font-size: .75rem;
-  --banner-text-size: 2.4rem;
-  @include from(l) {
-    --h1-font-size: 2.5rem;
-    --h2-font-size: 1.75rem;
-    --h3-font-size: 1.5rem;
-    --body-font-size: 1rem;
-    --small-font-size: .8rem;
-    --banner-text-size: 1.6rem;
-  }
-}
+// Spacing
+$spacing-unit: 8px;
+$container-max-width: 1200px;
 
+// Breakpoints
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
 
-//variables de font
-:root {
-  --Snigle-font: 'Sniglet', cursive;
-  --Rubik: 'Rubik', cursive;
-  --Patua: 'Patua One', cursive;
-  --Lobster: 'Lobster', cursive;
-  --Acme: 'Acme', cursive;
-}
+// Border radius
+$border-radius-sm: 4px;
+$border-radius-md: 6px;
+$border-radius-lg: 8px;
+
+// Z-index
+$z-back: -10;
+$z-normal: 1;
+$z-tooltip: 10;
+$z-fixed: 100;
+$z-modal: 1000;
+
+// Transitions
+$transition-base: all 0.3s ease-in-out;
