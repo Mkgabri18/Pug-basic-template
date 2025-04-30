@@ -63,7 +63,7 @@ This project uses the following tools and libraries:
 
    Install with:
    ```bash
-   npm i -D pug pug-loader html-webpack-plugin
+   npm i -D pug pug3-loader html-webpack-plugin
    ```
 
 3. **Styling**  

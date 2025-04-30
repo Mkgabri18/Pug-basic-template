@@ -1,4 +1,4 @@
-import style from './styles/style.scss';
+import './styles/style.scss';
 
 console.log("Hello World, time to init")
 /*let template = require("./templates/components/users.pug");
