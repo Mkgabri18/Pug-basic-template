@@ -9,7 +9,6 @@ const commonConfig = merge([
   { entry: ["./src/app.js"] },
   parts.clean(),
   parts.page({ title: "Demo" }),
-  parts.minifyJavaScript(),
   // parts.loadCSS(),
   parts.extractCSS(),
   parts.loadJavaScript(),
@@ -17,6 +16,7 @@ const commonConfig = merge([
 
 
 const productionConfig = merge([
+  parts.minifyJavaScript(),
   parts.generateSourceMaps({ type: "source-map" }),
 ]);
 
