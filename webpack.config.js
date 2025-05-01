@@ -2,9 +2,6 @@
 const { merge } = require("webpack-merge");
 const parts = require("./config/webpack.parts.js");
 
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const { WebpackPluginServe } = require("webpack-plugin-serve");
-
 const commonConfig = merge([
   { entry: ["./src/app.js"] },
   parts.clean(),
