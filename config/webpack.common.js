@@ -33,6 +33,28 @@ module.exports = {
             exclude: (path) => path.match(/node_modules/),
             use: "babel-loader" 
           },
+          {
+            test: /\.(png|svg|jpe?g|gif|webp)$/i,
+            use: [
+              {
+                loader: 'file-loader',
+                options: {
+                    name:'[name].[ext]',
+                    outputPath: 'assets/',
+                }
+              },
+            ]
+          },
+          {
+            test: /\.(ttf|eot|woff|woff2)$/,
+            use: {
+              loader: 'file-loader',
+              options: {
+                name: '[name].[ext]',
+                outputPath: 'assets/fonts/' 
+              }
+            }
+          }
         ]
     },
     plugins: [
